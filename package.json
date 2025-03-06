@@ -1,0 +1,26 @@
+{
+  "name": "datagrid",
+  "version": "1.0.0",
+  "description": "show table of file name, path, device and status",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^15.2.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.9",
+    "@types/react": "19.0.10",
+    "eslint": "9.21.0",
+    "eslint-config-next": "15.2.1",
+    "typescript": "5.8.2"
+  }
+}
