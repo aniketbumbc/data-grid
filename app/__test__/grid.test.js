@@ -100,4 +100,14 @@ beforeEach(() => {
         expect(downloadText).toHaveClass('normalText');
     })
 
+    it('Should not show download button when use check and uncheck the checkbox', () => {
+        const downloadText = screen.getByText('Download Selected');
+        const netshCheckbox =  screen.getByRole('checkbox', {name: "netsh.exe" });
+        fireEvent.click(netshCheckbox);
+        fireEvent.click(netshCheckbox);
+
+        expect(downloadText).toHaveClass('normalText');
+
+
+    })
 })

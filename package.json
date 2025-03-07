@@ -44,7 +44,8 @@
   "jest": {
     "moduleNameMapper": {
       "\\.(css|less|scss|sass)$": "identity-obj-proxy"
-    }
+    },
+    "testEnvironment": "jsdom"
   },
   "lint-staged": {
     "*.js": "prettier --write",

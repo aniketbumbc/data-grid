@@ -34,3 +34,26 @@ git clone https://github.com/aniketbumbc/data-grid.git
 cd data-grid
 npm install
 npm run dev
+
+
+```bash
+git clone https://github.com/aniketbumbc/data-grid.git
+
+cd data-grid
+npm install
+npm run dev
+npm test (for unit test case)
+npm run test:coverage ( for unit test coverage )
+```
+
+### 2. Data Grid 
+
+![Image](https://github.com/user-attachments/assets/da858bc7-ff62-4bb2-bdff-3cd5cce3f0c0)
+
+### 3. Test Coverage
+
+![Image](https://github.com/user-attachments/assets/3fc67087-d597-4193-a8ac-32bdefad95c5)
+
+**Coverage**
+
+![Image](https://github.com/user-attachments/assets/7075dd77-12d1-4c2d-a683-92df24430911)
