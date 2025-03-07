@@ -75,7 +75,6 @@ beforeEach(() => {
     })
 
     it('Should show correct count when no checkbox is checked', () => {
-        const selectAllCheckbox = screen.getByRole('checkbox', { name: 'Select All' });
         expect(screen.getByText('Non Selected')).toBeInTheDocument();
     })
 
