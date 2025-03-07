@@ -1,0 +1,72 @@
+body,
+html {
+    height: 100%;
+    /* Ensure the body takes up full height */
+    margin: 0;
+    display: grid;
+    place-items: center;
+    /* Center the content both horizontally and vertically */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+
+}
+
+.tableTh,
+.tableTd {
+    padding: 5px;
+    text-align: center;
+
+}
+
+.tableTr {
+    border: 1px solid #ddd;
+    padding: 30px;
+}
+
+.headerRow {
+    border: 1px solid #ddd;
+    font-size: 12px;
+    padding: 5px;
+}
+
+
+.flexContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.normalText {
+    color: black;
+    font-size: 12px;
+}
+
+.circleTextContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.greenCircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.statusText {
+    margin-right: 10px;
+}
+
+.downloadText {
+    font-size: 12px;
+    color: rgb(73, 118, 224);
+    text-decoration: underline;
+    /* Adjust the blur amount as needed */
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
