@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from './Grid.module.css';
 import data from '../../mock-data/sample.json';
 import { GridItem } from '../../types/type';
@@ -130,6 +130,7 @@ export default function Grid() {
                             <td colSpan={6} className={styles.headerRow}>
                                 <div className={styles.flexContainer}>
                                     <input type="checkbox" checked={selectAll}
+                                        aria-label="Select All"
                                         ref={selectAllRef}
                                         onChange={handleSelectAllChange} />   {checkBoxSelectedCount() > 0 ? <span> {checkBoxSelectedCount()} Selected</span> : <span>Non Selected</span>}
                                     <div className={allAvailable ? styles.downloadText : styles.normalText} onClick={showAlert} >Download Selected</div>
@@ -150,6 +151,7 @@ export default function Grid() {
                                 <tr key={index} className={styles.tableTr}>
                                     <td><>
                                         <input type="checkbox" name={item.name}
+                                            aria-label={item.name}
                                             checked={checkboxes[item.name]}
                                             onChange={(event) => handleCheckboxChange(event, item)} />
                                     </></td>
